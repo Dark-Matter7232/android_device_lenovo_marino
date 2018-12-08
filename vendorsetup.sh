@@ -21,30 +21,30 @@
 # function: add_lunch_combo generic-eng
 
 for var in eng user userdebug; do
-  add_lunch_combo lineage_marino-$var
+  add_lunch_combo lineage_brady-$var
 done
 
 cd frameworks/av
 sudo git reset --hard && sudo git clean -f -d
-sudo git apply -v ../../device/lenovo/marino/patches/0001-frameworks_av.patch
+sudo git apply -v ../../device/lenovo/brady/patches/0001-frameworks_av.patch
 cd ../..
 
 cd frameworks/base
 sudo git reset --hard && sudo git clean -f -d
-sudo git apply -v ../../device/lenovo/marino/patches/0002-frameworks_base.patch
+sudo git apply -v ../../device/lenovo/brady/patches/0002-frameworks_base.patch
 cd ../..
 
 cd frameworks/native
 sudo git reset --hard && sudo git clean -f -d
-sudo git apply -v ../../device/lenovo/marino/patches/0003-frameworks_native.patch
+sudo git apply -v ../../device/lenovo/brady/patches/0003-frameworks_native.patch
 cd ../..
 
 cd system/netd
 sudo git reset --hard && sudo git clean -f -d
-sudo git apply -v ../../device/lenovo/marino/patches/0004-system_netd.patch
+sudo git apply -v ../../device/lenovo/brady/patches/0004-system_netd.patch
 cd ../..
 
 cd system/core
 sudo git reset --hard && sudo git clean -f -d
-sudo git apply -v ../../device/lenovo/marino/patches/0005-system_core.patch
+sudo git apply -v ../../device/lenovo/brady/patches/0005-system_core.patch
 cd ../..
